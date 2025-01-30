@@ -16,11 +16,18 @@ class AbstractFactoryTest extends TestCase
     $this->assertInstanceOf(BMWCar::class, $myCar);
   }
 
-  function test_car_factory_return_valid_price() {
+  function test_BMW_car_return_valid_price() {
     $carFactory = new CarAbstractFactory(200);
     $myCar = $carFactory->CreateBMWCar();
 
     $this->assertEquals($myCar->CalculatePrice(), 1200);
+  }
+
+  function test_Bens_car_return_valid_price() {
+    $carFactory = new CarAbstractFactory(200);
+    $myCar = $carFactory->CreateBensCar();
+
+    $this->assertEquals($myCar->CalculatePrice(), 2200);
   }
 
   function test_car_factory_can_create_Bens_car() {

@@ -2,7 +2,7 @@
     "name": "abdulrahman/learn_design_pattern",
     "autoload": {
     "psr-4": {
-        "Creational\\AbstractFactory\\": "Creational/AbstractFactory"
+        "Creational\\": "Creational/"
     }
     },
     "autoload-dev": {
