@@ -18,4 +18,9 @@ class StaticFactoryTest extends TestCase
   {
     $this->assertInstanceOf(BENZCar::class, StaticFactory::factory('BENZ'));
   }
+
+  function test_static_factory_return_null_for_unknoun_type() 
+  {
+    $this->assertEquals(null, StaticFactory::factory('hamada'));
+  } 
 }

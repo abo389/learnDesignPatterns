@@ -2,7 +2,8 @@
     "name": "abdulrahman/learn_design_pattern",
     "autoload": {
     "psr-4": {
-        "Creational\\": "Creational/"
+        "Creational\\": "Creational/",
+        "Structural\\": "Structural/"
     }
     },
     "autoload-dev": {

@@ -1,2 +1,2 @@
 @echo off
-php vendor\bin\phpunit tests
+php vendor\bin\phpunit Tests
